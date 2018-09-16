@@ -99,6 +99,7 @@ void print_BST(Tree *t)
 		print_BST(t->right);
 	}
 }
+
 int main (void)
 {
 	int v[SIZE];
@@ -109,8 +110,6 @@ int main (void)
 	qsort(v, SIZE, sizeof(int), comp);
 	t=balanced_BST(0, SIZE-1, t, v);
 	print_BST(t);
-
-
 
 	return 0;
 }
