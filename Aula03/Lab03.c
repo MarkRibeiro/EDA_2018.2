@@ -23,12 +23,12 @@ void create_vector(int *v)
 
 	for(i=0;i<SIZE;i++)
 	{	
-		PULO:
+		JUMP:
 		v[i]=rand() %32;
 		for(j=0;j<i;j++)
 		{
 			if(v[j]==v[i])
-				goto PULO;
+				goto JUMP;
 		}	
 	}
 }
